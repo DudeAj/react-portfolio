@@ -9,13 +9,13 @@ interface IProps {
 const About: React.FC<IProps> = ({ data }) => {
 
   return (
-    <div className='bg-white container mx-auto my-100 py-32'>
-      <div className='flex w-full'>
+    <div id="about" className='bg-white container mx-auto my-100 py-16 sm:py-32'>
+      <div className='block sm:flex w-full'>
         <div className='w-full grid-cols-1'>
           <div className='flex flex-col justify-between h-full'>
             {data.map(item =>
-            (<div className='border rounded-2xl p-8 mx-32 flex items-center'>
-              <div className={`bg-${item.color}-500 h-16 w-16 rounded-full flex justify-center items-center`}>
+            (<div className='border rounded-2xl p-8 mx-4 my-4 sm:my-0 sm:mx-32 flex items-center'>
+              <div className={`${item.color} h-16 w-16 rounded-full flex justify-center items-center`}>
                 {item.icon}
               </div>
               <div className='flex justify-center'>
@@ -25,7 +25,7 @@ const About: React.FC<IProps> = ({ data }) => {
             )}
           </div>
         </div>
-        <div className='w-full px-12'>
+        <div className='w-full px-4 sm:px-12 pt-8 sm:pt-0'>
           <p className='text-red-500 font-medium text-3xl'>Who am I?</p>
           <p className='font-bold text-7xl pt-3'>About Me</p>
           <p className='mt-16 text-xl font-normal leading-8'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam eligendi unde eum quam placeat. Sapiente vero sed, error asperiores, saepe excepturi accusamus distinctio vitae sunt fugit praesentium quod neque optio.</p>

@@ -22,21 +22,21 @@ const App = () => {
   const [data, setData] = useState<dataType[]>([
     {
       text: "App Design",
-      color: "green",
+      color: "bg-green-700",
       desc: "Step counting app",
       image: "https://codecyan.com/omishah/assets/app.png",
       icon:<BsBrush color='#fff' size="1.5em"/>
     },
     {
       text: "Web Design",
-      color: "lime",
+      color: "bg-lime-700",
       desc: "IG downloader website",
       image: "https://codecyan.com/omishah/assets/custom-script.png",
       icon:<BsCodeSquare color='#fff' size="1.5em"/>
     },
     {
       text: "Custom script",
-      color: "blue",
+      color: "bg-blue-700",
       desc: "Social connection app",
       image: "https://codecyan.com/omishah/assets/phone.png",
       icon:<AiOutlineCode color='#fff' size="1.5em"/>
