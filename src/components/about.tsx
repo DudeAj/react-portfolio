@@ -14,7 +14,7 @@ const About: React.FC<IProps> = ({ data }) => {
         <div className='w-full grid-cols-1'>
           <div className='flex flex-col justify-between h-full'>
             {data.map(item =>
-            (<div className='border rounded-2xl p-8 mx-4 my-4 sm:my-0 sm:mx-32 flex items-center'>
+            (<div className='border rounded-2xl p-8 mx-4 md:mx-0 lg:mx-4 my-4 sm:my-0 sm:mx-16 md:px-8 xl:mx-32 flex items-center'>
               <div className={`${item.color} h-16 w-16 rounded-full flex justify-center items-center`}>
                 {item.icon}
               </div>
