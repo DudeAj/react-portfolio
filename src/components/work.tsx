@@ -10,7 +10,7 @@ const Work: React.FC<IProps> = ({ data }) => {
   return (
     <div id="work" className='bg-orange-100 py-16 sm:py-32'>
       <div className='container mx-auto'>
-        <div className='w-full px-4 sm:px-12'>
+        <div className='w-full px-4 sm:px-8'>
           <p className='text-green-500 font-medium text-3xl'>Explore My Work</p>
           <p className='font-bold text-7xl pt-3'>Portfolio</p>
         </div>
